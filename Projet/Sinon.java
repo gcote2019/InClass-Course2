@@ -1,3 +1,5 @@
+package Projet;
+
 public class Sinon {
 
     public static void main(String[] args) {
