@@ -1,17 +1,22 @@
 package Rectangle.Devoir;
 
+import java.util.Scanner;
+
 public class Perimetre {
     public static void main(String[] args) {
-        double x = 4.5;
-        double y = 3;
+        Scanner Clavier = new Scanner(System.in);
+        System.out.println("ENTREZ LA LARGEUR");
+        double x = Clavier.nextInt();
+        System.out.println("ENTREZ LE RAYON");
+        double y = Clavier.nextInt();
+        double Volume;
 
-        double Perimetre;
-        double Aire;
-
-        Aire = 2 * x + 2 * y;
-        Perimetre = x * y;
-
-        System.out.println("Le Perimetre est " + Perimetre);
-        System.out.println("L'Aire est " + Aire);
+        if (x > 0 && y > 0) {
+            Volume = (Math.PI * Math.pow(x, 2)) * y;
+            System.out.println("Le Volume est " + Volume);
+        } else {
+            System.out.println("une de vos valeure est negative");
+        }
+        Clavier.close();
     }
 }
