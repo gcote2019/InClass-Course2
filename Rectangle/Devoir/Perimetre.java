@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Perimetre {
     public static void main(String[] args) {
         Scanner Clavier = new Scanner(System.in);
-        System.out.println("ENTREZ LA LARGEUR");
-        double x = Clavier.nextInt();
         System.out.println("ENTREZ LE RAYON");
+        double x = Clavier.nextInt();
+        System.out.println("ENTREZ LE HAUTEUR");
         double y = Clavier.nextInt();
         double Volume;
 
