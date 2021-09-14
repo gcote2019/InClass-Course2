@@ -36,7 +36,7 @@ public class EsperanceVie {
     System.out.println("Do you smoke?");
     String Answer1 = YesNoAnswerMethod("");
     if (Answer1.equals("Y") || Answer1.equals("y")) {
-      Age = 70;
+      Age = Age - 10;
       System.out.println("You Answered Yes, Next Question");
     } else {
       System.out.println("You Answered No, Next Question");
