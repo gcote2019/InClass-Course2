@@ -5,6 +5,12 @@ import java.util.Scanner;
 public class Perimetre {
     public static void main(String[] args) {
         Scanner Clavier = new Scanner(System.in);
+        boolean l = true;
+        boolean m = false;
+        boolean n = true;
+
+        boolean resultat = !l || (!m && n);
+        System.out.println(resultat + "GGGGGGGGGGGGGGGGGGGG");
         System.out.println("ENTREZ LE RAYON");
         double x = Clavier.nextInt();
         System.out.println("ENTREZ LE HAUTEUR");
