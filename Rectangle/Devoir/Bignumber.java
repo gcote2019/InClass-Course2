@@ -1,10 +1,9 @@
 package Rectangle.Devoir;
 //IMPORTS
 
-import javax.naming.ldap.Rdn;
+
 import javax.swing.JFrame;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Bignumber extends JFrame {

@@ -5,15 +5,17 @@ package Rectangle.Devoir.Devoirs;
 import java.util.Scanner;
 
 public class Loops{
-    int Chiffre;
-    Scanner Keyboard = new Scanner(System.in);
+   
+   
     public static void main(String[] args){
-        system.out.println("Mettre Un chiffre")
-        while (!Keyboard.hasNextInt()>0) {
-            System.out.println("Mets un autre chiffre");
-            Keyboard.next();
-          }
-          Chiffre = Keyboard.nextInt();
-          System.out.println(Chiffre);
-    }
+      int Val = 2;
+      Scanner keyboard = new Scanner(System.in);
+      System.out.println("Please enter the Number of stars you want to count to");
+      int MaxNumber = keyboard.nextInt();
+     while(Val < MaxNumber){
+        Val += 2;
+        System.out.println(Val);
+      }
+        keyboard.close();
+    }  
 }

@@ -14,8 +14,10 @@ public class EsperanceVie {
         && !Answer.equalsIgnoreCase("N")) {
       System.out.println("\nInvalid response. Try again.");
       Answer = Keyboard.next();
+      Keyboard.close();
     }
     return Answer;
+    
   }
 
   public static void main(String[] args) {
