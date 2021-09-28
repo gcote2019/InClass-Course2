@@ -7,7 +7,6 @@ package Rectangle.Devoir.PilotageMenu.PilotageMenu.src.pilotagemenu;
 
 import java.util.Scanner;
 
-
 /**
  *
  * @author georg
@@ -17,6 +16,17 @@ public class PilotageMenu {
     /**
      * @param args the command line arguments
      */
+    static void Menu() {
+        System.out.println("Menu");
+        System.out.println("----------------------------------------------------");
+        System.out.println("1. Afficher le nom du programmeur.");
+        System.out.println("2. Afficher l’âge du programmeur.");
+        System.out.println("3. Afficher l’humeur du programmeur.");
+        System.out.println("4. Quitter ce programme.");
+        System.out.println("----------------------------------------------------");
+
+    }
+
     public static void main(String[] args) {
         final int MENU_NOM = 1;
         final int MENU_AGE = 2;
@@ -29,25 +39,9 @@ public class PilotageMenu {
         // Pilotage menu
         // Afficher le menu
         // Et répondre à sa requête
-      
-        System.out.println("Menu");
-        System.out.println("----------------------------------------------------");
-        System.out.println("1. Afficher le nom du programmeur.");
-        System.out.println("2. Afficher l’âge du programmeur.");
-        System.out.println("3. Afficher l’humeur du programmeur.");
-        System.out.println("4. Quitter ce programme.");
-        System.out.println("----------------------------------------------------");
-        
-        do {
-            
 
-            System.out.println("Menu");
-            System.out.println("----------------------------------------------------");
-            System.out.println("1. Afficher le nom du programmeur.");
-            System.out.println("2. Afficher l’âge du programmeur.");
-            System.out.println("3. Afficher l’humeur du programmeur.");
-            System.out.println("4. Quitter ce programme.");
-            System.out.println("----------------------------------------------------");
+        do {
+            Menu();
             valeur = clavier.nextInt();
             switch (valeur) {
                 case MENU_NOM:
@@ -65,10 +59,9 @@ public class PilotageMenu {
                 default:
                     System.out.println("Vous vous êtes trompé.");
                     break;
-                    
 
             }
-          
+
         } while (!(valeur == MENU_QUITTER));
         clavier.close();
     }
