@@ -19,6 +19,7 @@ public class Stars {
                 System.out.print("*");
                 val++;
             }
+            System.out.println("");
             val = 0;
 
         } while (stars > 0);
